@@ -1,3 +1,3 @@
-East Bay Vegan Eats
+## East Bay Vegan Eats
 
 ## Screenshots
