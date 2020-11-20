@@ -28,7 +28,11 @@ module.exports = function(passport) {
     function(req, employeeid, password, done) {
 
 		
+<<<<<<< HEAD
         User.findOne({ 'local.employee id' : employeeid }, function(err, user) {
+=======
+        User.findOne({ 'local.employee id' :  employeeid }, function(err, user) {
+>>>>>>> 131e70396cde9860d4865e5d7a18f20015020497
             if (err)
                 return done(err);
 
@@ -38,14 +42,24 @@ module.exports = function(passport) {
             } else {
 
 				
+<<<<<<< HEAD
                 var newUser = new User();
 
                 newUser.local.employeeid = employeeid;
+=======
+                var newUser            = new User();
+
+                newUser.local.employeeid    = employeeid;
+>>>>>>> 131e70396cde9860d4865e5d7a18f20015020497
                 newUser.local.password = newUser.generateHash(password); 
 
                 newUser.save(function(err) {
                     if (err)
+<<<<<<< HEAD
                     throw err;
+=======
+                        throw err;
+>>>>>>> 131e70396cde9860d4865e5d7a18f20015020497
                     return done(null, newUser);
                 });
             }
