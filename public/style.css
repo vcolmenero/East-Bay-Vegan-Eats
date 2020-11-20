@@ -1,0 +1,58 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: rgb(58,80,64);
+}
+img{
+  height: 200px;
+}
+
+.jumbotron{
+  color: white;
+  background-image: url(img/vegan-sandwhich.jpg);
+  background-size: cover;
+  height: 1000px;
+  border: solid black 15px;
+}
+
+h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin:0 0 10px 0;
+}
+.order{
+  font-size: 2em;
+  background-color: white;
+}
+
+.order ul{
+  padding: 0;
+}
+
+.order li{
+  border: 1px solid lightgrey;
+  padding: 5px 0 5px 5px;
+}
+
+.complete{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  padding: 20px;
+}
+h4{
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+.chef{
+  color: black;
+}
+
+.compOrd{
+  font-size: 1.4em;
+}
+
