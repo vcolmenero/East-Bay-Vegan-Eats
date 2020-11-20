@@ -8,7 +8,6 @@ const db = mongoose.connection
 
 
 //connect to the database
-<<<<<<< HEAD
 
 mongoose.connect("mongodb+srv://admin:1234@cluster0.owbib.mongodb.net/East-Bay_Vegan_Eats?retryWrites=true&w=majority", {
   	useNewUrlParser: true, 
@@ -23,13 +22,6 @@ db.on('connected', function() {
 console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
 });
 
-=======
-mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-    useCreateIndex: true, 
-    useUnifiedTopology: true 
-})
->>>>>>> 131e70396cde9860d4865e5d7a18f20015020497
 
 //listen for the connection
 db.on('connected', function(){
