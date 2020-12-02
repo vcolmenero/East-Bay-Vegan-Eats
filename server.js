@@ -10,7 +10,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-require('./config/database.js');
+var database = require('./config/database.js');
 
 
 
@@ -36,7 +36,7 @@ app.use(passport.initialize());
 app.use(passport.session()); 
 app.use(flash()); 
 // listener ===============
-
+require("./controllers/routes")(app, passport, database)
 app.listen(PORT, function(){
   console.log(`Ready For Your Order: ${PORT}`)
 })

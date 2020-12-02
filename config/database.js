@@ -23,12 +23,9 @@ console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
 });
 
 
-//listen for the connection
-db.on('connected', function(){
-    console.log(`connected to MongoDB on ${db.host}:${db.port}`)
-})
 
 // mongodb error / success ===============
 db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
 // db.on('connected', () => console.log('mongo connected'));
 db.on('disconnected', () => console.log('mongo disconnected'));
+module.exports = db
