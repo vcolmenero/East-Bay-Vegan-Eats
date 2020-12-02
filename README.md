@@ -19,14 +19,15 @@ An app that allows employees to place customers orders.
 ## Screenshots
 ### Wireframes
 ![wireframe1](./public/images/wireframe1.png)
-![wireframe1](./public/images/wireframe2.png)
+![wireframe2](./public/images/wireframe2.png)
 ### Images
-![wireframe1](./public/images/Landingpage.png)
-![wireframe1](./public/images/orders.png)
-![wireframe1](./public/images/signup.png)
-![wireframe1](./public/images/login.png)
+![Landingpage](./public/images/Landingpage.png)
+![orders](./public/images/orders.png)
+![signup](./public/images/signup.png)
+![login](./public/images/login.png)
 
 ## Future Enhancements
 Be able to add a full menu with drinks
 
-
+## Getting Started
+https://east-bay-vegan-eats.herokuapp.com/
